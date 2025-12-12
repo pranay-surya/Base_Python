@@ -1,0 +1,125 @@
+PS C:\Users\Dell> mysql -u root -p
+Enter password: **********
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 43
+Server version: 8.0.42 MySQL Community Server - GPL
+
+Copyright (c) 2000, 2025, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| codeblockacademy   |
+| college            |
+| hyper              |
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
++--------------------+
+7 rows in set (0.04 sec)
+
+mysql> use college
+Database changed
+mysql> select * from student;
+ERROR 1146 (42S02): Table 'college.student' doesn't exist
+mysql> select * from student;
++------+---------+------+-----------+
+| ID   | Name    | Year | Fees_Paid |
++------+---------+------+-----------+
+|    2 | Bob     | 2022 | No        |
+|    3 | Charlie | 2023 | Yes       |
+|    4 | Diana   | 2024 | No        |
+|    5 | Ethan   | 2023 | Yes       |
++------+---------+------+-----------+
+4 rows in set (0.00 sec)
+
+mysql> select * from student;
++------+---------+------+-----------+
+| ID   | Name    | Year | Fees_Paid |
++------+---------+------+-----------+
+|    2 | Bob     | 2022 | No        |
+|    3 | Charlie | 2023 | Yes       |
+|    4 | Diana   | 2024 | No        |
+|    5 | Ethan   | 2023 | Yes       |
+|    6 | Fiona   | 2022 | Yes       |
+|    7 | George  | 2023 | No        |
+|    8 | Hina    | 2024 | Yes       |
+|    9 | Ivan    | 2022 | Yes       |
+|   10 | Jaya    | 2023 | No        |
+|   11 | Kunal   | 2024 | Yes       |
+|   12 | Lina    | 2023 | No        |
+|   13 | Mohit   | 2022 | Yes       |
+|   14 | Nina    | 2024 | Yes       |
+|   15 | Omkar   | 2023 | No        |
++------+---------+------+-----------+
+14 rows in set (0.00 sec)
+
+mysql> select * from student;
++------+---------+------+-----------+
+| ID   | Name    | Year | Fees_Paid |
++------+---------+------+-----------+
+|    3 | Charlie | 2023 | Yes       |
+|    4 | Diana   | 2024 | No        |
+|    5 | Ethan   | 2023 | Yes       |
+|    6 | Fiona   | 2022 | Yes       |
+|    7 | George  | 2023 | No        |
+|    8 | Hina    | 2024 | Yes       |
+|    9 | Ivan    | 2022 | Yes       |
+|   10 | Jaya    | 2023 | No        |
+|   11 | Kunal   | 2024 | Yes       |
+|   12 | Lina    | 2023 | No        |
+|   13 | Mohit   | 2022 | Yes       |
+|   14 | Nina    | 2024 | Yes       |
+|   15 | Omkar   | 2023 | No        |
++------+---------+------+-----------+
+13 rows in set (0.00 sec)
+
+mysql> select * from student;
++------+---------+------+-----------+
+| ID   | Name    | Year | Fees_Paid |
++------+---------+------+-----------+
+|    3 | Charlie | 2023 | Yes       |
+|    4 | Diana   | 2024 | No        |
+|    5 | Ethan   | 2023 | Yes       |
+|    6 | Fiona   | 2022 | Yes       |
+|    7 | George  | 2023 | No        |
+|    8 | Hina    | 2024 | Yes       |
+|    9 | Ivan    | 2022 | Yes       |
+|   10 | Jaya    | 2023 | No        |
+|   11 | Kunal   | 2024 | Yes       |
+|   12 | Lina    | 2023 | No        |
+|   13 | Mohit   | 2022 | Yes       |
+|   14 | Nina    | 2024 | Yes       |
+|   15 | Omkar   | 2023 | No        |
++------+---------+------+-----------+
+13 rows in set (0.00 sec)
+
+mysql> select * from student;
++------+---------+------+-----------+
+| ID   | Name    | Year | Fees_Paid |
++------+---------+------+-----------+
+|    3 | Charlie | 2023 | Yes       |
+|    4 | Diana   | 2024 | No        |
+|    5 | Bob     | 2023 | Yes       |
+|    6 | Fiona   | 2022 | Yes       |
+|    7 | George  | 2023 | No        |
+|    8 | Hina    | 2024 | Yes       |
+|    9 | Ivan    | 2022 | Yes       |
+|   10 | Jaya    | 2023 | No        |
+|   11 | Kunal   | 2024 | Yes       |
+|   12 | Lina    | 2023 | No        |
+|   13 | Mohit   | 2022 | Yes       |
+|   14 | Nina    | 2024 | Yes       |
+|   15 | Omkar   | 2023 | No        |
++------+---------+------+-----------+
+13 rows in set (0.00 sec)
+
+
